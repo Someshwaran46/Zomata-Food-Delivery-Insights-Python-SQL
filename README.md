@@ -1,52 +1,110 @@
-# Zomata - Food Delivery Data Insights Using Python and SQL
+# 🍽️ ZOMATA – Food Delivery Data Insights with Python & SQL
 
-This project focuses on analyzing food delivery data to enhance operational efficiency and customer satisfaction. Using SQL, Python, and Streamlit, we develop an interactive tool for managing orders, customers, restaurants, and deliveries. The tool supports dynamic schema changes and robust database operations. By generating synthetic datasets with Python's Faker library, we build a relational database with normalized tables. Key use cases include order management, customer analytics, delivery optimization, and restaurant insights. The project emphasizes object-oriented programming (OOP) principles for modular, scalable code. SQL queries extract valuable insights, which are visualized in a user-friendly Streamlit app. Learners will gain practical experience in data engineering, database management, and data analysis. This project helps businesses optimize delivery operations and improve customer experience.
-# Overview
+Deliver smarter with **ZOMATA** – a fully interactive data analytics platform for the food delivery ecosystem. This project helps you analyze, optimize, and visualize restaurant, customer, order, and delivery data using **Python**, **SQL**, and **Streamlit**.
 
-This repository contains a comprehensive project for food delivery data analysis using Python, SQL, and Streamlit. The goal of this project is to enhance operational efficiency and customer satisfaction by analyzing food delivery data. It allows dynamic management of orders, customers, restaurants, and deliveries, and provides insightful visualizations.
+Whether you're an aspiring data engineer or a business looking to boost delivery performance, this tool lets you manage and analyze everything — from fake data generation to real-time interactive insights.
 
-## Project Structure:
+---
 
-- **/ZOMATA/CRUD.py**  
-  Contains CRUD (Create, Read, Update, Delete) operations for managing the database.
+## 🚀 What This Project Does
 
-- **/ZOMATA/dataset_creation.py**  
-  Generates synthetic datasets using Faker and creates the necessary tables in a MySQL database.
+- ✅ Generate realistic food delivery datasets using `Faker`
+- ✅ Normalize and store data in a MySQL database
+- ✅ Perform full **CRUD** operations
+- ✅ Run insightful SQL queries for real-world KPIs
+- ✅ Visualize results with an interactive **Streamlit UI**
+- ✅ Build a modular and scalable Python backend using **OOP principles**
 
-- **/ZOMATA/HOME.py**  
-  Introduction page that provides an overview of the project and its purpose.
+---
 
-- **/ZOMATA/image/Gemini_Generated_Image_txgo0ytxgo0ytxgo.jpeg**  
-  Folder containing the image used in the HOME.py page for project visualization.
+## 📂 Project Structure
 
-- **/ZOMATA/QUERY.py**  
-  Contains SQL queries that interact with the database, fetching and displaying data based on specific analysis criteria.
+```bash
+ZOMATA/
+├── CRUD.py                  # All database Create, Read, Update, Delete operations
+├── dataset_creation.py     # Generates synthetic data & builds MySQL tables
+├── HOME.py                 # Streamlit landing page with project overview
+├── QUERY.py                # Executes SQL queries and displays visual insights
+├── TITLE.py                # Main navigation hub to access all Streamlit pages
+└── /image
+    └── Gemini_Generated_Image.jpeg  # Used on the homepage
+```
+---
+## 🌟 Features
 
-- **/ZOMATA/TITLE.py**  
-  Main page that serves as a navigation hub to access the Home, CRUD, and Query pages.
+-  🔄 Dynamic CRUD operations across multiple entities
+-  📊 Analytical SQL queries to understand trends in orders, delivery times & customer behavior
+-  🧱 Modular OOP-based Python code
+-  ⚡ Streamlit Web App – responsive, intuitive, and beginner-friendly
+-  🔧 Schema-flexible database design
+  
+---
+## 🛠️ Technologies Used
 
-## Features:
-- **Database Management:** Create and modify database tables using dynamic SQL operations.
-- **Data Insights:** Visualize and analyze data trends in customer orders, delivery times, and restaurant popularity.
-- **Streamlit Interface:** Interactive web interface for easy navigation and user engagement.
-
-## Requirements:
 - Python 3.x
 - MySQL
-- Required libraries: Faker, Streamlit, pymysql
+- Faker – to generate realistic data
+- Streamlit – for the UI
+- pymysql – to connect Python with MySQL
+  
+---
+## Install all required libraries:
 
-## Steps to Run the Web Application
-### Step 1: Creating the Database
-- To analyze and perform CRUD operations and data analysis, the database must be created. You can generate the necessary datasets by running:
-python /ZOMATA/dataset_creation.py
-### Step 2: Running the Web Application
-- To launch the web application, execute the following command:
-streamlit run <path_to_/ZOMATA/TITLE.py>
-- This will run the main file (TITLE.py), which calls other pages like Home, CRUD, and Query. The application is built using Streamlit.
+```bash
+pip install streamlit faker pymysql
+```
+### 🧑‍💻 Clone and Run the Project
 
-### Step 3: Accessing the UI
-Once the program is executed, your default web browser will open automatically, displaying the UI of the application. You will see three radio buttons:
+#### Step 1: Clone the GitHub Repository
 
-- Home: Displays generic details about the product.
-- CRUD: Allows CRUD operations on the dataset.
-- Query: Provides answers to predefined questions based on the data.
+```bash
+git clone https://github.com/Someshwaran46/Zomata-Food-Delivery-Insights-Python-SQL.git
+cd Zomata-Food-Delivery-Insights-Python-SQL
+```
+#### Step 2: Set Up the Database
+Create synthetic data and build the MySQL tables:
+
+```bash
+python ZOMATA/dataset_creation.py
+```
+Make sure your MySQL server is running and credentials in the script are updated (default: root/root).
+
+#### Step 3: Launch the Web App
+Run the Streamlit dashboard:
+
+```bash
+streamlit run ZOMATA/TITLE.py
+```
+
+#### Step 4: Use the App
+Once running, your default browser opens automatically with 3 navigation buttons:
+
+- 🏠 Home: Overview of the project
+- 🧾 CRUD: Perform Create, Read, Update, Delete operations
+- 🔍 Query: Get answers to predefined business questions
+
+---
+### 💼 Use Cases
+
+- Track & manage food delivery logistics
+- Identify top-performing restaurants
+- Optimize delivery efficiency
+- Improve customer satisfaction
+- Learn key data engineering & visualization concepts hands-on
+
+---
+### 🎓 Perfect For
+
+- Data Science & Engineering Learners
+- Analytics Enthusiasts
+- Product & Ops Teams
+- SQL + Python Developers
+
+---
+
+## 📬 Feedback
+
+- Feel free to open issues or submit pull requests! Improvements, and suggestions are always welcome 🙌
+- For clarifications drop an email to somesh4602@gmail.com.
+
+---
